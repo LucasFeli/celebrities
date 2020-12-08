@@ -1,0 +1,9 @@
+<div>
+    <h2>Celebrities</h2>
+    {{> newCelebrity}}
+    {{#each celebrities}}
+    <p>Name: {{name}}</p>
+    <a href="/celebrity/{{_id}}">more info</a>
+    {{> deleteForm}}
+    {{/each}}
+</div>
